@@ -1,0 +1,10 @@
+[
+  {
+    "username": "alice",
+    "status": "active"
+  },
+  {
+    "username": "bob",
+    "status": "blocked"
+  }
+]
