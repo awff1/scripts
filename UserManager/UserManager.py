@@ -1,5 +1,5 @@
 import json
-import User
+from User import User
 
 class UserManager:
     def __init__(self, filename="users.json"):
