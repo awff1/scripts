@@ -1,0 +1,32 @@
+[project]
+name = "simple-oop"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "mypy>=1.18.2",
+    "python-dotenv>=1.1.1",
+    "ruff>=0.13.1",
+]
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+
+[tool.ruff.format]
+# Like Black, use double quotes for strings.
+quote-style = "double"
+
+# Like Black, indent with spaces, rather than tabs.
+indent-style = "space"
+
+[tool.ruff.lint]
+select = ["F", "I", "E", "W", "D", "PL", "N", "ARG", "B", "A"]
+
+[tool.ruff.lint.pydocstyle]
+convention = "pep257"
+
+[tool.mypy]
+ignore_missing_imports = true
+enable_error_code = ["explicit-override", "mutable-override"]
